@@ -256,12 +256,12 @@ footer {
 
   .blog {
     width: 100%;
-    /* */
+    margin: 0;
   }
 
   .blog-box {
-    /* */_
-    /* */
+    padding-left: 2%;  /* この辺は微調整 */
+    padding-right: 2%;
   }
 
   .blog-image {
@@ -270,27 +270,25 @@ footer {
 
   .blog-text {
     width: 49%;
-    /* */
+    padding-top: 5px; /* 微調整 文字が上に移動した。*/
   }
 
   .sidebar {
     width: 100%;
-    /* */
-    /* */
+    padding-left: 3%; /* 左側の内側余白の微調整 */
+    padding-right: 3%;
   }
 
   .instagram-box {
     width: 48%;
-    /*  */
+    padding-top: 48%;
   }
 
   .instagram-box:nth-child(odd) {
-    /*  */
+    margin-right: 4%;
   }
 
   .pagination {
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* 下の文字Popularとの距離を空ける為 */
   }
 }
-
-
