@@ -227,28 +227,70 @@ footer {
   color: #fff;
 }
 
-/* すべての画面サイズで適用される設定 */
-.social i {
-  color:black;
-}
+@media screen and (max-width: 425px) {
+  header {  /* セレクタ */
+    width: 100%; /* レスポンシブ変更箇所 */
+  }
 
-/* タブレット横置きサイズ（1024px）以下の際に適用される設定 */
-@media screen and (max-width:1024px) { /* ()の中は切り替えたい画面の条件 */
-  .social i { /* 上記条件になった時の変更css */
-    color: green;
+  .nav-list {
+    width: 100%;
+  }
+
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .social {
+    display: none; /* none = 表示なし */
+  }
+
+  .main-visual-content {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .blog {
+    width: 100%;
+    /* */
+  }
+
+  .blog-box {
+    /* */_
+    /* */
+  }
+
+  .blog-image {
+    width: 49%; /* blogの絵を約半分の幅へ。右に文字あるから　*/
+  }
+
+  .blog-text {
+    width: 49%;
+    /* */
+  }
+
+  .sidebar {
+    width: 100%;
+    /* */
+    /* */
+  }
+
+  .instagram-box {
+    width: 48%;
+    /*  */
+  }
+
+  .instagram-box:nth-child(odd) {
+    /*  */
+  }
+
+  .pagination {
+    margin-bottom: 50px;
   }
 }
 
-/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
-@media screen and (max-width:768px) {
-  .social i {
-    color: red;
-  }
-}
 
-/* スマートフォンサイズ(425px)以下の際に適用される設定 */
-@media screen and (max-width:425px) {
-  .social i {
-    color: blue;
-  }
-}
